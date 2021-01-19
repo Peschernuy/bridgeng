@@ -1,0 +1,46 @@
+$accent: #38aa96;
+$default: #8d8e8e;
+
+%ubuntu-300{
+  font-family: 'Ubuntu-Light';
+  font-weight: 300;
+}
+%ubuntu-400{
+  font-family: 'Ubuntu-Regular';
+  font-weight: 400;
+}
+%ubuntu-500{
+  font-family: 'Ubuntu-Medium';
+  font-weight: 500;
+}
+%ubuntu-700{
+  font-family: 'Ubuntu-Bold';
+  font-weight: 700;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@function max($numbers...) {
+  @return m#{a}x(#{$numbers});
+}
+@function min($numbers...) {
+  @return m#{i}n(#{$numbers});
+}

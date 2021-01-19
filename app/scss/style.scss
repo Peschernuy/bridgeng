@@ -6,6 +6,190 @@
 
 
 
+.header{
+  background: #7b8d8d;
+  opacity: 0.7;
+  padding-bottom: 1px;
+  
+}
+.menu{
+  &__list{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &-item{
+      padding: 30px 25px;
+      &:hover{
+        border-bottom: 2px solid #fff;
+        background-color: #4e9e8d;
+        transition: .3s;
+      }
+    }
+    &-link{
+      text-transform: uppercase;
+      @extend %ubuntu-500;
+      font-size: 14px;
+      color: #fff;
+      
+    }
+
+  }
+}
+
+
+
+.about{
+  background-image: url('../images/header-bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+    height: 1463px;
+    margin-top: -83px;
+   
+    &__inner{
+
+      max-width: 630px;
+      margin: 0 auto ;
+      padding-top: 630px;
+      text-align: center;
+    }
+    &__title{
+      @extend %ubuntu-700;
+      font-size: 66px;
+      color: #fff;
+      margin-bottom: 25px;
+      span{
+        background-color: #38aa96;
+      }
+    }
+    &__subtitle{
+      margin: 0 auto;
+      @extend %ubuntu-500;
+      font-size: 16px;
+      color: #fff;
+      max-width: 440px;
+      margin-bottom: 60px;
+    }
+    &__btn{
+      @extend %ubuntu-500;
+      font-size: 16px;
+      color: #fff;
+      text-transform: uppercase;
+      padding: 25px 50px;
+      background-color: #38aa96;
+      border: none;
+      border-radius: 20px;
+      outline: none;
+      cursor: pointer;
+      margin-bottom: 265px;
+    }
+
+
+    &__info{
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      max-width: 1110px;
+
+      &-title{
+      margin: 0 auto;
+      text-align: center;
+      max-width: 188px;
+      @extend %ubuntu-700;
+      font-size: 21px;
+      color: #fff;
+      margin-bottom: 10px;
+      }
+      &-text{
+       margin: 0 auto;
+      text-align: center;
+      max-width: 235px;
+      @extend %ubuntu-500;
+      font-size: 14px;
+      color: #fff;
+      }
+
+      &-team{
+       max-width: 265px;
+       position: relative;
+       &::after{
+         content: '';
+         background-image: url('../images/about-1.png');
+         background-repeat: no-repeat;
+         width: 176px;
+         height: 176px;
+         top: -155px;
+         left: 30px;
+         position: absolute;
+       }
+      }
+      &-online{
+       max-width: 265px;
+       position: relative;
+       &::after{
+         content: '';
+         background-image: url('../images/about-2.png');
+         background-repeat: no-repeat;
+         width: 176px;
+         height: 176px;
+         top: -155px;
+         left: 30px;
+         position: absolute;
+       }
+      }
+      &-practic{
+       max-width: 265px;
+       position: relative;
+       &::after{
+         content: '';
+         background-image: url('../images/about-3.png');
+         background-repeat: no-repeat;
+         width: 176px;
+         height: 176px;
+         top: -155px;
+         left: 35px;
+         position: absolute;
+       }
+      }
+      &-sertificate{
+       max-width: 265px;
+       position: relative;
+       &::after{
+         content: '';
+         background-image: url('../images/about-4.png');
+         background-repeat: no-repeat;
+         width: 176px;
+         height: 176px;
+         top: -155px;
+         left: 40px;
+         position: absolute;
+       }
+      }
+    }
+}
+
+.practic-title,
+.sertificate-title{
+  max-width: 265px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 @import 'media';

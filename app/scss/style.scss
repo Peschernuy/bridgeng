@@ -7,22 +7,35 @@
 
 
 .header{
-  background: #7b8d8d;
-  opacity: 0.7;
-  padding-bottom: 1px;
+  position: relative;
+  &::after{
+    position: absolute;
+    content: '';
+    background-image: url('../images/header-transp.png');
+    background-repeat: no-repeat;
+    height: 79px;
+    max-width: 1920px;
+    width: 100%;
+    margin-top: -80px;
+    z-index: 1;
+    
+  }
   
 }
 .menu{
+  position: relative;
+  z-index: 10;
+  height: 80px;
   &__list{
     display: flex;
     justify-content: space-between;
-    align-items: center;
     &-item{
       padding: 30px 25px;
       &:hover{
         border-bottom: 2px solid #fff;
         background-color: #4e9e8d;
-        transition: .3s;
+        transition: .2s;
+
       }
     }
     &-link{
@@ -30,9 +43,7 @@
       @extend %ubuntu-500;
       font-size: 14px;
       color: #fff;
-      
     }
-
   }
 }
 
@@ -42,9 +53,23 @@
   background-image: url('../images/header-bg.jpg');
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: top center;
+    background-position: center center;
+
     height: 1463px;
+    width: 100%;
     margin-top: -83px;
+    position: relative;
+      &::after{
+        position: absolute;
+        content: '';
+        background-image: url('../images/about-transp.png');
+        background-repeat: no-repeat;
+        height: 300px;
+        max-width: 1920px;
+        width: 100%;
+        margin-top: -270px;
+        z-index: 0;
+      }
    
     &__inner{
 
@@ -86,10 +111,13 @@
 
 
     &__info{
+      position: relative;
+      z-index: 10;
       margin: 0 auto;
       display: flex;
       justify-content: space-between;
       max-width: 1110px;
+      
 
       &-title{
       margin: 0 auto;
@@ -173,6 +201,325 @@
   max-width: 265px;
 }
 
+
+
+.team{
+  padding: 65px 0 55px 0;
+  &__title{
+    text-align: center;
+    @extend %ubuntu-700;
+      font-size: 50px;
+      line-height: 61px;
+      color: #38aa96;
+      margin-bottom: 15px;
+  }
+  &__subtitle{
+    margin: 0 auto;
+    text-align: center;
+    max-width: 610px;
+    @extend %ubuntu-500;
+      font-size: 14px;
+      line-height: 21px;
+      color: #7d7d7d;
+      margin-bottom: 30px;
+
+  }
+  &__photo-box{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 35px;
+    margin-bottom: 35px;
+  }
+  &__slider{
+    &-item{
+    display: flex;
+    justify-content: space-between;
+    }
+    &-img{
+      width: 460px;
+      object-fit: cover;
+    }
+    &-info{
+      max-width: 300px;
+      text-align: center;
+      margin-top: 100px;
+      margin-right: 160px;
+      
+    }
+    &-title{
+      @extend %ubuntu-500;
+      font-size: 36px;
+      line-height: 36px;
+      color: #38aa96;
+      margin-bottom: 35px;
+    }
+    &-text{
+      @extend %ubuntu-500;
+      font-size: 14px;
+      line-height: 21px;
+      color: #7d7d7d;
+      margin-bottom: 45px;
+    }
+  }
+}
+
+
+.price{
+padding: 60px 0 50px 0;
+background-color: #f6faf9;
+text-align: center;
+  &__title{
+    @extend %ubuntu-700;
+      font-size: 50px;
+      line-height: 61px;
+      color: #38aa96;
+      margin-bottom: 15px;
+  }
+  &__subtitle{
+    margin: 0 auto;
+    text-align: center;
+    max-width: 600px;
+    @extend %ubuntu-500;
+      font-size: 14px;
+      line-height: 21px;
+      color: #7d7d7d;
+      margin-bottom: 30px;
+  }
+  &__box{
+    max-width: 1005px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    &-item{
+      max-width: 320px;
+      padding: 45px 45px 25px 45px;
+      background-color: #fff;
+      border-radius: 17px;
+    }
+    &-text{
+      @extend %ubuntu-400;
+      font-size: 14px;
+      color: #7d7d7d;
+      margin-bottom: 20px;
+    }
+    &-num{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      @extend %ubuntu-400;
+      font-size: 14px;
+      color: #7d7d7d;
+      padding-bottom: 15px;
+      border-bottom: 1px solid #38aa96;
+      span{
+        @extend %ubuntu-700;
+      font-size: 38px;
+      color: #38aa96;
+      margin-right: 10px;
+      }
+      
+    }
+    &-advantage{
+      @extend %ubuntu-400;
+      font-size: 14px;
+      color: #7d7d7d;
+      margin-top: 18px;
+    }
+    &-btn{
+      padding: 15px 60px;
+      background-color: #38aa96;
+      color: #fff;
+      margin-top: 25px;
+      border-radius: 20px;
+      text-transform: uppercase;
+      @extend %ubuntu-500;
+      font-size: 16px;
+      cursor: pointer;
+    }
+  }
+
+}
+
+
+
+.reviews{
+  padding: 45px 0 75px 0;
+  &__title{
+    @extend %ubuntu-700;
+      font-size: 50px;
+      line-height: 61px;
+      color: #38aa96;
+      margin-bottom: 80px;
+      text-align: center;
+  }
+  &__box{
+    display: flex;
+    justify-content: space-between;
+    max-width: 1100px;
+    &-item{
+      max-width: 360px;
+      padding: 30px;
+      height: 320px;
+      border: 2px solid #38aa96;
+      border-radius: 17px;
+      @extend %ubuntu-300;
+      font-size: 20px;
+      line-height: 37px;
+      color: #38aa96;
+    }
+    &-text{
+      max-height: 240px;
+      height: 100%;
+      overflow: auto;
+    }
+    &-twit{
+      display: flex;
+    }
+    &-img{
+      margin-right: 20px;
+    }
+    &-name{
+       @extend %ubuntu-400;
+      font-size: 18px;
+      color: #7d7d7d;
+    }
+  }
+}
+
+
+.footer{
+  padding: 193px 0;
+  background-image: url('../images/contacts-bg.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 880px;
+  &__inner{
+    display: flex;
+    justify-content: space-between;
+    max-width: 1150px;
+  }
+  &__info{
+    max-width: 294px;
+    padding: 60px 18px 80px 30px;
+    color: #fff;
+    border: 1px solid #fff;
+    border-radius: 15px;
+    margin-right: 65px;
+    &-title{
+      @extend %ubuntu-700;
+      font-size: 30px;
+      margin-bottom: 60px;
+    }
+  }
+  &__mail{
+    &-text{
+      @extend %ubuntu-300;
+      font-size: 18px;
+      color: #f1f2f7;
+    }
+    &-adress{
+      @extend %ubuntu-500;
+      font-size: 18px;
+      color: #38aa96;
+      margin-bottom: 30px;
+    }
+  }
+  &__phone{
+    &-text{
+      @extend %ubuntu-300;
+      font-size: 18px;
+      color: #f1f2f7;
+    }
+    &-number{
+      @extend %ubuntu-500;
+      font-size: 18px;
+      color: #38aa96;
+      margin-bottom: 112px;
+    }
+  }
+  &__socials{
+    &-text{
+      @extend %ubuntu-300;
+      font-size: 18px;
+      color: #f1f2f7;
+      margin-bottom: 15px;
+      margin-left: 8px;
+    }
+  }
+  &__form{
+    max-width: 750px;
+    background-color: #fff;
+    border-radius: 15px;
+    padding: 38px 80px 54px 80px;
+    &__title{
+      max-width: 400px;
+      @extend %ubuntu-700;
+      font-size: 40px;
+      color: #38aa96;
+      text-align: center;
+      margin: 0 auto;
+      margin-bottom: 112px;
+
+    }
+    &-box{
+      max-width: 600px;
+      margin: 0 auto;
+    }
+    &-name{
+      max-width: 270px;
+      width: 100%;
+      padding: 15px 18px;
+      border: none;
+      border-radius: 12px;
+      background-color: #e9e9e9;
+      margin-right: 30px;
+      margin-bottom: 65px;
+    }
+    &-surname{
+      max-width: 270px;
+      width: 100%;
+      padding: 15px 18px;
+      border: none;
+      border-radius: 12px;
+      background-color: #e9e9e9;
+    }
+    &-email{
+      max-width: 270px;
+      width: 100%;
+      padding: 15px 18px;
+      border: none;
+      border-radius: 12px;
+      background-color: #e9e9e9;
+      margin-right: 30px;
+      margin-bottom: 50px;
+      &:required{
+        border-color: red;
+      }
+    }
+    &-phone{
+      max-width: 270px;
+      width: 100%;
+      padding: 15px 18px;
+      border: none;
+      border-radius: 12px;
+      background-color: #e9e9e9;
+    }
+    &-btn{
+      display: flex;
+      margin: 0 auto;
+      border: none;
+      @extend %ubuntu-500;
+      font-size: 15px;
+      background-color: #38aa96;
+      text-transform: uppercase;
+      color: #fff;
+      padding: 18px 70px 20px 70px;
+      border-radius: 15px;
+      cursor: pointer;
+
+    }
+  }
+}
 
 
 

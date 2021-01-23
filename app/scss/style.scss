@@ -232,9 +232,13 @@
     margin-bottom: 35px;
   }
   &__slider{
-    &-item{
-    display: flex;
-    justify-content: space-between;
+    &-items{
+      display: flex;
+      justify-content: space-between;
+      max-width: 1000px;
+      margin: 0 auto;
+      position: relative;
+      height: 420px;
     }
     &-img{
       width: 460px;
@@ -262,7 +266,39 @@
       margin-bottom: 45px;
     }
   }
+  .slick-prev{
+    position: absolute;
+    top: 50%;
+    font-size: 0;
+    border: none;
+    background-color: transparent;
+    background-image: url('../images/icons/chevron-left-solid.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 24px;
+    width: 14px;
+    z-index: 10;
+    outline: none;
+  }
+  .slick-next{
+    position: absolute;
+    top: 50%;
+    right: 0;
+    font-size: 0;
+    border: none;
+    background-color: transparent;
+    background-image: url('../images/icons/chevron-right-solid.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 24px;
+    width: 14px;
+    outline: none;
+  }
+  
 }
+
+
+
 
 
 .price{
@@ -412,13 +448,6 @@ text-align: center;
     height: 16px;
     width: 16px;
   }
-
-
-
-
-
-
-
 
 }
 

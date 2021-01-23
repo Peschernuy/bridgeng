@@ -7,4 +7,25 @@ $(function(){
     dots: false,
     arrows:true
   });
+
+
+  $('.team__slider').slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    dots: false,
+    arrows: true
+  });
+
+
+
+
+
+
+
+
+
+
+
+
+
 }); 

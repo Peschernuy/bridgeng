@@ -226,11 +226,19 @@
 
   }
   &__photo-box{
-    display: flex;
-    justify-content: space-between;
-    padding: 0 35px;
+    // display: block;
+    // justify-content: space-between;
+    padding: 0 35px 0 50px;
     margin-bottom: 35px;
+    
   }
+  &__photo-item{
+    width: 130px;
+  }
+  &__photo-img{
+    max-width: 125px; 
+  }
+
   &__slider{
     &-items{
       display: flex;

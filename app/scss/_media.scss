@@ -85,7 +85,7 @@
     padding: 0 15px;
     margin-top: -90px;
     &-team,&-online,&-practic,&-sertificate{
-      max-width: 350px;
+      max-width: 400px;
       &::after{
         display: none;
       }
@@ -148,7 +148,7 @@
     margin-top: -230px;
     grid-template-columns: repeat(1, 1fr);
     &-team,&-online,&-practic,&-sertificate{
-      max-width: 500px;
+      max-width: 520px;
     }
   }
   &__btn{

@@ -6,6 +6,12 @@ $(function(){
     slidesToScroll: 3,
     dots: false,
     arrows:true
+
+    
+
+
+
+
   });
 
 
@@ -13,9 +19,38 @@ $(function(){
     slidesToShow: 6,
     asNavFor: '.team__slider',
     focusOnSelect: true,
-    arrows: false
+    arrows: false,
+
+    responsive: [
+      {
+        breakpoint: 700,
+        settings: {
+          slidesToShow: 4,
+
+        }
+      },
+
+      {
+        breakpoint: 540,
+        settings: {
+          slidesToShow: 3,
+
+        }
+      },
+
+      {
+        breakpoint: 400,
+        settings: {
+          slidesToShow: 2,
+
+        }
+      }
+
+
+    ]
     
-  })
+
+  });
 
 
 
@@ -26,7 +61,17 @@ $(function(){
     slidesToScroll: 1,
     dots: false,
     arrows: true,
-    asNavFor: '.team__photo-box'
+    asNavFor: '.team__photo-box',
+
+    responsive: [
+      {
+        breakpoint: 900,
+        settings: {
+          arrows: false,
+
+        }
+      }
+    ]
     
   });
 

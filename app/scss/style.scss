@@ -217,7 +217,8 @@
   &__subtitle{
     margin: 0 auto;
     text-align: center;
-    max-width: 610px;
+    max-width: 640px;
+    padding: 0 15px;
     @extend %ubuntu-500;
       font-size: 14px;
       line-height: 21px;
@@ -240,6 +241,9 @@
   }
 
   &__slider{
+    &-item{
+      padding: 0 15px;
+    }
     &-items{
       display: flex;
       justify-content: space-between;

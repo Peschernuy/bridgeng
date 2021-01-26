@@ -92,6 +92,20 @@
     }
   }
  }
+
+ .team{
+ 
+    &__slider-info{
+      margin-right: 30px;
+      margin-top: 0;
+    }
+    &__slider-img{
+      width: auto;
+    }
+    &__photo-box{
+      padding: 0 15px;
+    }
+ }
 }
 
 @media(max-width: 750px){
@@ -118,6 +132,24 @@
     }
     &__btn{
       margin-bottom: 180px;
+    }
+  }
+}
+
+
+@media(max-width: 650px){
+  .team{
+    
+    &__slider{
+      &-items{
+        height: 300px;
+      }
+      &-title{
+        margin-bottom: 10px;
+      }
+      &-text{
+        margin-bottom: 10px;
+      }
     }
   }
 }
@@ -156,6 +188,28 @@
   }
 }
 
+.team{
+  padding: 30px 0 30px 0;
+  &__title{
+    font-size: 40px;
+  }
+  &__slider{
+    &-photo{
+      display: none;
+    }
+    &-info{
+      display: block;
+      margin: 0 auto;
+   
+
+    }
+    &-items{
+      height: 200px;
+      
+
+    }
+  }
+}
 
 }
 
@@ -169,5 +223,10 @@
    &__list{
      left: 0;
    }
+  }
+  .team{
+    &__photo-box{
+      padding: 0 15px 0 30px;
+    }
   }
 }

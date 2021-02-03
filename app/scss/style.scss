@@ -277,6 +277,9 @@
       color: #7d7d7d;
       margin-bottom: 45px;
     }
+    &-media{
+      cursor: pointer;
+    }
   }
   .slick-prev{
     position: absolute;
@@ -291,6 +294,7 @@
     width: 14px;
     z-index: 10;
     outline: none;
+    cursor: pointer;
   }
   .slick-next{
     position: absolute;
@@ -305,6 +309,7 @@
     height: 24px;
     width: 14px;
     outline: none;
+    cursor: pointer;
   }
   
 }
@@ -428,6 +433,7 @@ text-align: center;
     }
     &-img{
       margin-right: 20px;
+      max-height: 
     }
     &-name{
        @extend %ubuntu-400;
@@ -447,6 +453,8 @@ text-align: center;
     background-repeat: no-repeat;
     height: 16px;
     width: 16px;
+    outline: none;
+    cursor: pointer;
   }
 
   .slick-next{
@@ -460,6 +468,8 @@ text-align: center;
     background-repeat: no-repeat;
     height: 16px;
     width: 16px;
+    outline: none;
+    cursor: pointer;
   }
 
 }
@@ -527,6 +537,9 @@ text-align: center;
       margin-bottom: 15px;
       margin-left: 8px;
     }
+    &-icons{
+      cursor: pointer;
+    }
   }
   &__form{
     max-width: 780px;
@@ -557,7 +570,7 @@ text-align: center;
       border-radius: 12px;
       background-color: #e9e9e9;
       margin-top: 12px;
-      
+      outline: none;
  
     }
     &-surname{
@@ -569,6 +582,7 @@ text-align: center;
       border-radius: 12px;
       background-color: #e9e9e9;
        margin-top: 12px;
+       outline: none;
     }
     &-email{
       display: inline-block;
@@ -580,6 +594,7 @@ text-align: center;
       background-color: #e9e9e9;
       margin-top: 12px;
       margin-right: 20px;
+      outline: none;
          input:required{
             border-color: red;
              content: 'Поле должно быть заполненым';
@@ -595,6 +610,7 @@ text-align: center;
       border-radius: 12px;
       background-color: #e9e9e9;
        margin-top: 12px;
+       outline: none;
     }
     &-btn{
       display: flex;
@@ -608,6 +624,7 @@ text-align: center;
       padding: 18px 70px 20px 70px;
       border-radius: 15px;
       cursor: pointer;
+      outline: none;
 
     }
     &-text-1{

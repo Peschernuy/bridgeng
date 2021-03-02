@@ -43,7 +43,7 @@
 @media(max-width: 900px){
   .header{
     &__inner{
-      padding: 0 30px;
+      padding: 0;
       margin: 0 auto;
     }
   }
@@ -58,23 +58,25 @@
       height: 65px;
       width: 113px;
       top: 0;
-      left: 0;
+      left: 5px;
         }
      &__list{
       transform: translateY(-200%);
-      top: 80px;
+      top: 79px;
       position: absolute;
-      z-index: 5;
+      z-index: 11;
       display: flex;
       flex-direction: column;
-      left: 30%;
-      right: 30%;
-      max-width: 380px;
+      left: 0;
+      max-width: 900px;
       width: 100%;
       background-color: #fff;
+      text-align: center;
+      height: 555px;
       &.menu__list--active{
         transform: translateY(0%);
         transition: all .6s;
+
       }
       &-item{
         &:hover{
@@ -102,7 +104,7 @@
       background-color: transparent;
       background-image: url('../images/icons/menu.svg');
       background-repeat: no-repeat;
-      right: 0;
+      right: 5px;
       top: 20%;
       z-index: 10;
 
@@ -162,22 +164,7 @@
 }
 
 @media(max-width: 750px){
-  .menu{
-    &__list{
-      max-width: 380px;
-      width: 100%;
-      background-color: #fff;
 
-      left: 20%;
-      right: 20%;
-      top: 0;
-      &-link{
-        &:hover{
-          color: #000;
-        }
-      }
-    }
-  }
   .about{
    height: 1000px;
    &__inner{
@@ -245,16 +232,7 @@
 }
 
 @media(max-width: 580px){
-  .menu{
-    &__list{
-      max-width: 155px;
-      left: 40%;
-      right: 40%;
-      &-item{
-        padding: 20px 20px;
-      }
-    }
-  }
+
 
 .about{
   &__title{
@@ -320,14 +298,6 @@
 
 @media(max-width: 440px){
 
-  .menu{
-   &::before{
-    display: none;
-   }
-   &__list{
-     left: 0;
-   }
-  }
   .team{
     &__photo-box{
       padding: 0 15px 0 30px;
